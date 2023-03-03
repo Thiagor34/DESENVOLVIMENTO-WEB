@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to left,rgb(84, 84, 223), rgb(230, 69, 69));
+    
+}
+
+.login_screen {
+    margin: 40px auto;  
+    background-color: white;
+    width: 380px;
+    height: 550px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+input {
+    height: 35px;
+    width: 340px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+a {
+    text-align: right;
+}
+
+button {
+    background: linear-gradient(to left,rgb(84, 84, 223), rgb(230, 69, 69));
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 22px;
+    font-size: 18px;
+    color: white;   
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.social_icons {
+    display: flex;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.social_icons > i {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: 0.5s;
+    font-size: 25px;
+    color: white;
+}
+
+.social_icons > i:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: rgb(101, 101, 231);
+}
+
+.fa-twitter {
+    background-color: rgb(77, 214, 248);
+}
+
+.fa-google {
+    background-color: tomato;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+}

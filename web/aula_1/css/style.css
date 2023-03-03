@@ -1,0 +1,25 @@
+
+:root {
+    --cor1 : rgb(202, 202, 247);
+    --cor2 : rgb(255, 230, 0);
+    --cor3 : rgb(255, 51, 0);
+    --cor4 : rgb(0, 0, 0);
+    --cor5 : rgb(255, 255, 255);
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+}
+body {
+    background-color: var(--cor1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background-image: linear-gradient(to bottom, var(--cor3), rgb(255, 188, 188));
+    color: var(--cor4);
+    text-align: center;
+}
+
+p, span {
+    font-size:  18px;
+}
+

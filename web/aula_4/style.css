@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("https://images3.alphacoders.com/273/273289.jpg");
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: auto;
+}
+
+.card {
+    background-color: rgb(24, 24, 24);
+    width: 280px;
+    height: 525px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 20px auto;
+}
+
+.imgs {
+    background-color: white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 4px solid black;
+    box-shadow: 0px 0px 40px red;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.social_info {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 180px;
+    margin: auto;
+}
+
+.social_icons > i {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: 0.5s;
+    font-size: 25px;
+    color: white;
+}
+
+.social_icons > i:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: rgb(101, 101, 231);
+}
+
+.fa-twitter {
+    background-color: rgb(77, 214, 248);
+}
+
+.fa-google {
+    background-color: tomato;
+}
+
+.fa-linkedin {
+    background-color: rgb(78, 78, 207);
+}
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+button {
+    background-color: rgb(24, 24, 24);
+    color: rgb(0, 191, 224);
+    border: 2px solid rgb(0, 217, 255);
+    border-radius: 2px;
+    width: 220px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;    
+}
+
+button:hover {
+    color: rgb(255, 255, 105);
+    border-color: rgb(255, 0, 170);
+    cursor: pointer;
+}
+

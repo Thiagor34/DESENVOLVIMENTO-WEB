@@ -1,0 +1,46 @@
+h1 {
+    color: red;
+}
+
+.titulo_2 {
+    color: green;
+}
+
+#titulo_3 {
+    color: blue;
+}
+
+div {
+    margin: auto;
+    color: white;
+    text-align: center;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border: 4px blue solid;
+    border-radius: 10px 25px;
+    box-shadow: 15px 15px 20px black;
+    overflow-y: scroll;
+}
+
+.d-block {
+    background-color: red;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.d-none {
+    background-color: darkviolet;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
