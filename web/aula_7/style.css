@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+}
+
+@media(max-width:600px) {
+    body {
+        background-color: green;
+    }
+    
+    .card {
+        width: 450px;
+    }
+    
+
+}
+
+@media(max-width:500px) {
+    body {
+        background-color: blue;
+    }
+
+    .card {
+        display: none;
+    }
+}

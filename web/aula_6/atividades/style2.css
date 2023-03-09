@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(173, 6, 173);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    color: white;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first_article{
+    background-color: rgb(21, 245, 245);
+    width: 30%;
+    height: 320px;
+    margin: 1% .5% auto 1%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.second_article{
+    background-color:  rgb(21, 245, 245);
+    width: 30%;
+    height: 320px;
+    margin: 1% .5% auto .5%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.third_article{
+    background-color:  rgb(21, 245, 245);
+    width: 40%;
+    height: 320px;
+    margin: 1% 1% auto .5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+.third_article > .buttons{
+    margin: 1% auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.third_article > .buttons > button{
+    height: 25px;
+    border-radius: 0;
+    border: grey 1px solid;
+    width: 24%;
+}    
+
+.third_article > .button_blush{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.third_article > .button_blush > button{
+    height: 25px;
+    width: 92%;
+    border-radius: 0;
+    border: grey 1px solid;
+}
+
+.third_article > .texts_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.third_article > .texts_infos > p{
+    padding: 1%;
+}
+
+@media(max-width:600px) {
+    body{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: red;
+    }
+}
+
+@media(max-width:500px) {
+    body{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: green;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .third_article, .first_article, .second_article{
+        background-color:  rgb(21, 245, 245);
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+        margin: 1% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: auto;
+    }
+
+}
