@@ -85,6 +85,27 @@ nav > a:hover {
     transform: translate(-50%, 50%);
 }
 
+.description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(0.3);
+    opacity: 0;
+}
+
+.title:hover {
+    color: black;
+}
+
+.title:hover + .description {
+    opacity: 1;
+    transition: .8s;
+}
+
 .box > img {
     filter: blur(3px);
     transition: 0.2s;
