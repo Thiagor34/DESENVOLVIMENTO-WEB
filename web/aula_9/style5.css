@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "l_1 v_1" "vr v_2";
+    grid-template-rows: 30% auto;
+    padding: 15px;
+    gap: 15px;
+}
+
+.vermelho {
+    grid-area: vr;
+    background-color: red;
+}
+
+.laranja_1 {
+    grid-area: l_1;
+    background-color: rgb(255, 153, 0);
+}
+
+.verde_1 {
+    grid-area: v_1;
+    background-color: rgb(87, 250, 101);
+}
+
+.verde_2 {
+    grid-area: v_2;
+    background-color: rgb(33, 100, 13);
+    display: grid;
+    grid-template-areas: "v_3 v_3" "v_4 l_2";
+    padding: 15px;
+    gap: 15px;
+}
+
+.verde_3 {
+    grid-area: v_3;
+    background-color: rgb(15, 58, 2);
+}
+
+.verde_4 {
+    grid-area: v_4;
+    background-color: rgb(40, 161, 3);
+}
+
+.laranja_2 {
+    grid-area: l_2;
+    background-color: rgb(255, 196, 0);
+}

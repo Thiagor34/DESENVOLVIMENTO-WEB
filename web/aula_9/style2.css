@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pai {
+    background-color: gray;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px auto 500px;
+    grid-template-rows: 200px 300px;
+    gap: 20px;
+}
+
+.pai > div {
+    border: 2px solid black;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    grid-template-rows: 200px auto;
+    display: grid;
+    grid-template-areas: "vermelho vermelho laranja" "verde_1 verde_2 laranja";
+    gap: 10px;
+}
+
+.vermelho {
+    grid-area: vermelho;
+    background-color: red;
+}
+
+.laranja {
+    grid-area: laranja;
+    background-color: rgb(255, 136, 0);
+}
+
+.verde_1 {
+    grid-area: verde_1;
+    background-color: green;
+}
+
+.verde_2 {
+    grid-area: verde_2;
+    background-color: rgb(7, 216, 7);
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "l_1 l_1 v v" "v_1 v_2 v_2 v_2" "l_2 l_2 l_2 l_2";  
+    grid-template-rows: 45% 45% auto;
+    gap: 5px;
+}
+.vermelho {
+    grid-area: v;
+    background-color: red;
+}
+
+.laranja_1 {
+    grid-area: l_1;
+    background-color: rgb(255, 136, 0);
+}
+
+.verde_1 {
+    grid-area: v_1;
+    background-color: green;
+}
+
+.verde_2 {
+    grid-area: v_2;
+    background-color: rgb(7, 216, 7);
+}
+
+.laranja_2 {
+    grid-area: l_2;
+    background-color: rgb(182, 100, 7);
+}
