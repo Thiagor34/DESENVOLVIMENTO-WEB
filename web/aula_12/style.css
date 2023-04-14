@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.bar {
+    display: block;
+    border-radius: 10px;
+    height: 7px;
+    background-color: white;
+    width: 50px;
+    margin: 10px 0;
+    transition: .2s;
+}
+
+.slider {
+    width: 600px;
+    height: 500px;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    transform: translateX(0);
+    transition: .5s;
+}
+
+.container>img {
+    min-width: 600px;
+    min-height: 500px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.btn > button{
+    opacity: .2;
+    width: 30px;
+    font-size: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.200), rgb(0, 0, 0, 0.500));
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: .8;
+}   
+
+.btn.inicio> .left {
+    visibility: hidden;
+}
+
+.content {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+@media(max-width:768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(1) {
+        transition: .2s;
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(2) {
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .hamburguer.active-icon>.bar:nth-child(3) {
+        transform: translateY(-21px) rotate(-45deg);
+        transition: .2s;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        background-color: blueviolet;
+        width: 100%;
+        text-align: center;
+        right: -100%;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+}

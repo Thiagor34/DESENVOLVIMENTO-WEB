@@ -30,6 +30,11 @@ h1 {
     padding: 0 5px;
 }
 
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
 .spin {
     border: 10px solid tomato;
     width: 80px;
@@ -55,13 +60,6 @@ h1 {
         transform: rotate(360deg);
         border-top: 10px solid  orangered;
     }
-}
-
-.slide {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    animation: images 8s infinite linear;
 }
 
 @keyframes images {
