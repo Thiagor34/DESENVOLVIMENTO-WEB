@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 10%; 
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.active {
+    border-bottom: 3px solid red;
+    height: 45x;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#Pasteis, #Bebidas {
+    display: none;
+}
